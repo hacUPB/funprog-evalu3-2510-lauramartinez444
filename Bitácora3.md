@@ -41,11 +41,19 @@ Claro, aquí tienes un resumen de la información sobre el proceso de compilaci�
 
 # El proceso de compilación consta de cuatro etapas principales:
 1. **Preprocesamiento**: El preprocesador analiza el código fuente, procesa directivas como `#include` y `#define`, y elimina comentarios. El resultado es un archivo de texto intermedio.
+
+imagen--
    
 2. **Compilación**: El compilador traduce el código preprocesado a lenguaje ensamblador, aplicando optimizaciones si se especifican.
 
+imagen --
+
 3. **Ensamblaje**: El ensamblador convierte el código ensamblador a código objeto, que contiene código máquina pero no es ejecutable por sí solo.
 
+imagen --
+
 4. **Enlace**: El linker combina los archivos objeto con librerías necesarias para producir el ejecutable final.
+
+imagen -- 
 
 Cada etapa puede ser ejecutada de forma independiente utilizando comandos específicos en la consola. Además, se pueden utilizar flags para ajustar el nivel de optimización y advertencias durante la compilación.
