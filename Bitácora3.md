@@ -57,3 +57,22 @@ imagen --
 imagen -- 
 
 Cada etapa puede ser ejecutada de forma independiente utilizando comandos específicos en la consola. Además, se pueden utilizar flags para ajustar el nivel de optimización y advertencias durante la compilación.
+
+#¿Cuál es la función principal del preprocesador en C?
+La función principal del preprocesador en C es preparar el código fuente antes de la compilación. Esto incluye la gestión de directivas como la inclusión de archivos (#include), la definición de macros (#define), y la eliminación de comentarios.
+
+
+#¿Por qué se dice que el código objeto (.o) no es directamente ejecutable?
+El código objeto (.o) no es directamente ejecutable porque es una representación intermedia que necesita ser vinculada con otras bibliotecas y módulos para crear un archivo ejecutable completo. Carece de la información de enlace necesaria para su ejecución.
+
+
+#¿Qué diferencia existe entre el código ensamblador (.s) y el código objeto (.o)?
+La diferencia es que el código ensamblador (.s) es un formato legible por humanos que representa instrucciones en lenguaje ensamblador, mientras que el código objeto (.o) es un formato binario que puede ser procesado por el enlazador y no es legible por humanos.
+
+
+#¿Para qué sirve la opción S en GCC?
+La opción S en GCC se utiliza para generar código ensamblador a partir del código fuente, produciendo un archivo con extensión .s que contiene las instrucciones en lenguaje ensamblador.
+
+
+#¿Qué sucede si omitimos la etapa de linker?
+Si omitimos la etapa de linker, no se podrá crear un archivo ejecutable, ya que faltarán las referencias necesarias a las bibliotecas y otros módulos que el programa necesita para funcionar. El programa no podrá ejecutarse debido a la falta de enlaces necesarios.
