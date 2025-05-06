@@ -78,7 +78,7 @@ int main() {
                     printf("Ingrese el valor de corriente\n");
                     scanf("%f", &valor_de_corriente);
                     valor_de_resistencia = valor_de_voltaje / valor_de_corriente;
-                    printf("El valor de resistencia es: %.2f ohmios\n", valor_de_resistencia);
+                    printf("El valor de resistencia es: %.2f Ohmios\n", valor_de_resistencia);
                     break;
                 default:
                     printf("Opción no válida.\n");
@@ -103,15 +103,15 @@ int main() {
                     printf("Introduce el factor de potencia: ");
                     scanf("%f", &factor_potencia_val);
                     potencia_aparente_val = potencia_aparente(potencia_activa_val, factor_potencia_val);
-                    printf("Potencia aparente: %.2f VA\n", potencia_aparente_val);
+                    printf("Potencia aparente: %.2f W\n", potencia_aparente_val);
                     break;
                 case 3: 
-                    printf("Introduce la potencia aparente en VA: ");
+                    printf("Introduce la potencia aparente en vatios: ");
                     scanf("%f", &potencia_aparente_val);
                     printf("Introduce el factor de potencia: ");
                     scanf("%f", &factor_potencia_val);
                     potencia_activa_val = potencia_activa(potencia_aparente_val, factor_potencia_val);
-                    printf("Potencia activa: %.2f vatios\n", potencia_activa_val);
+                    printf("Potencia activa: %.2f W\n", potencia_activa_val);
                     break;
                 default:
                     printf("Opción no válida.\n");
@@ -134,7 +134,7 @@ int main() {
                     scanf("%lf", &area_transversal);
                     resistencia_de_un_conductor = longitud / area_transversal;
                     coeficiente_de_resistividad = valor_resistividad_del_oro * resistencia_de_un_conductor;
-                    printf("El coeficiente de resistividad es: %.9f ohmios\n", coeficiente_de_resistividad);
+                    printf("El coeficiente de resistividad es: %.10f ohmios\n", coeficiente_de_resistividad);
                     break;
                 case 2: 
                     printf("Ingrese la longitud del conductor en metros \n");
@@ -143,7 +143,7 @@ int main() {
                     scanf("%lf", &area_transversal);
                     resistencia_de_un_conductor = longitud / area_transversal;
                     coeficiente_de_resistividad = valor_resistividad_del_cobre * resistencia_de_un_conductor;
-                    printf("El coeficiente de resistividad es: %.9f ohmios\n", coeficiente_de_resistividad);
+                    printf("El coeficiente de resistividad es: %.10f ohmios\n", coeficiente_de_resistividad);
                     break;
                 case 3: 
                     printf("Ingrese la longitud del conductor en metros \n");
@@ -152,7 +152,7 @@ int main() {
                     scanf("%lf", &area_transversal);
                     resistencia_de_un_conductor = longitud / area_transversal;
                     coeficiente_de_resistividad = valor_de_resistividad_del_aluminio * resistencia_de_un_conductor;
-                    printf("El coeficiente de resistividad es: %.9f ohmios\n", coeficiente_de_resistividad);
+                    printf("El coeficiente de resistividad es: %.10f ohmios\n", coeficiente_de_resistividad);
                     break;
                 case 4: 
                     printf("Ingrese la longitud del conductor en metros \n");
@@ -161,7 +161,7 @@ int main() {
                     scanf("%lf", &area_transversal);
                     resistencia_de_un_conductor = longitud / area_transversal;
                     coeficiente_de_resistividad = valor_resistividad_de_la_plata * resistencia_de_un_conductor;
-                    printf("El coeficiente de resistividad es: %.9f ohmios\n", coeficiente_de_resistividad);
+                    printf("El coeficiente de resistividad es: %.10f ohmios\n", coeficiente_de_resistividad);
                     break;
                 case 5: 
                     printf("Ingrese la longitud del conductor en metros \n");
@@ -172,7 +172,7 @@ int main() {
                     scanf("%lf", &valor_resistividad_otro);
                     resistencia_de_un_conductor = longitud / area_transversal;
                     coeficiente_de_resistividad = valor_resistividad_otro * resistencia_de_un_conductor;
-                    printf("El coeficiente de resistividad es: %.9f ohmios\n", coeficiente_de_resistividad);
+                    printf("El coeficiente de resistividad es: %.10f ohmios\n", coeficiente_de_resistividad);
                     break;
                 default:
                     printf("Opción no válida.\n");
@@ -195,11 +195,11 @@ int main() {
             switch(opcion) {
                 case 1: 
                     resistencia_de_led1 = (voltaje_de_los_leds / corriente_de_los_leds) * numero_de_leds;
-                    printf("Resistencia necesaria para conexión en paralelo: %.2f ohmios\n", resistencia_de_led1);
+                    printf("Resistencia necesaria para conexión en paralelo: %.4f ohmios\n", resistencia_de_led1);
                     break;
                 case 2:
                     resistencia_de_led2 = (voltaje_de_los_leds * numero_de_leds) / corriente_de_los_leds;
-                    printf("Resistencia necesaria para conexión en serie: %.2f ohmios\n", resistencia_de_led2);
+                    printf("Resistencia necesaria para conexión en serie: %.4f ohmios\n", resistencia_de_led2);
                     break;
                 default:
                     printf("Opción no válida.\n");
